@@ -1,0 +1,109 @@
+@import '../../../helpers/__vars'
+
+.navbar-container
+  width: 100%
+  height: auto
+
+  display: flex
+  align-items: center
+  justify-content: center
+
+  margin-top: 26px
+  .navbar-box
+    width: 100%
+    height: auto
+    max-width: 1400px
+
+    position: relative
+
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    padding: 0 15px
+    .logo-box
+      display: flex
+      align-items: center
+
+      flex-direction: row
+      flex-wrap: wrap
+      .logo-text
+        font-weight: $fw-600
+      .logo-img
+        margin-right: 12px
+    .navbar-category
+      padding: 0
+      margin: 0
+
+      list-style: none
+
+      display: flex
+      align-items: center
+      @media screen and ( max-width: 1199.98px )
+        display: none
+        visibility: hidden
+        opacity: 0
+      .category-item
+        font-size: 1em
+        font-weight: $fw-500
+
+        margin: 0 10px
+
+        cursor: pointer
+        color: $text-gray
+
+        transition: all .2s
+
+        &:hover
+          color: $text-color
+    .join-box
+      display: flex
+
+      flex-direction: row
+
+      align-items: center
+      height: auto
+
+      position: relative
+      @media screen and ( max-width: 1199.98px )
+        display: none
+        visibility: hidden
+        opacity: 0
+      .btn
+        height: auto
+
+        border: none
+        outline: none
+
+        background-color: transparent
+
+        cursor: pointer
+
+        &.btn-secondary
+          color: $text-gray
+          transition: all .2s
+          font-size: 1em
+
+          font-weight: $fw-600
+          margin-right: 41px
+
+          &:hover
+            color: $text-color
+        &.btn-primary
+          width: 118px
+          height: 48px
+
+          color: $text-color
+
+          display: flex
+          justify-content: center
+          align-items: center
+
+          background-color: $secondary-bg
+          border-radius: 8px
+
+          font-size: 1em
+          font-weight: $fw-600
+          transition: all .2s
+          &:active
+            transform: scale(0.9)

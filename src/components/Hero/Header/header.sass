@@ -1,0 +1,109 @@
+@import '../../../helpers/__vars'
+
+.header-container
+  position: relative
+
+  width: 100%
+  margin-top: 58px
+  .header-box
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    .left-section
+      width: 50%
+      z-index: 10
+      height: auto
+      @media screen and ( max-width: 977.98px )
+        width: 100%
+      .main-title
+        font-weight: $fw-500
+        font-size: 3.125em
+        margin-bottom: 30px
+        span
+          color: $secondary-bg
+      p
+        color: $text-gray
+        font-size: 1.125em
+        font-weight: $fw-400
+        margin-bottom: 60px
+        @media screen and ( max-width: 1199.98px )
+          margin-bottom: 30px
+      .form-group
+        width: 100%
+        max-width: 497.66px
+        height: 64px
+
+        border-radius: 15px
+
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        padding: 0 11.4px 0 21px
+
+        background-color: rgba(255, 255, 255, 0.1)
+
+        margin-bottom: 110px
+        .btn
+          height: auto
+
+          border: none
+          outline: none
+
+          background-color: transparent
+
+          cursor: pointer
+          &.btn-primary
+            width: 130px
+            height: 48px
+
+            color: $text-color
+
+            display: flex
+            justify-content: center
+            align-items: center
+
+            background-color: $secondary-bg
+            border-radius: 8px
+
+            font-size: 1em
+            font-weight: $fw-600
+            transition: all .2s
+            &:active
+              transform: scale(0.9)
+        .search-input
+          width: 100%
+          max-width: 300px
+
+          border: none
+          background-color: transparent
+          color: $text-color
+          padding: 0 10px
+
+          outline: none
+      .social-section
+        width: 100%
+        height: auto
+
+        display: flex
+        flex-direction: row
+
+        align-items: center
+
+        .social-box
+          width: 58px
+
+          display: flex
+          justify-content: center
+          align-items: center
+          cursor: pointer
+
+          transition: all .2s
+          &:hover
+            transform: scale(0.9)
+
+    .right-section
+      position: absolute
+      right: 0
+      height: auto
+      z-index: 0

@@ -1,0 +1,73 @@
+@import '../../helpers/__vars'
+
+.tools-container
+  width: 100%
+  height: auto
+
+  position: relative
+  .tools-box
+    display: flex
+
+    flex-direction: row
+    flex-wrap: wrap
+
+    align-items: flex-start
+
+    justify-content: space-between
+  .left-section
+    width: 50%
+    @media screen and ( max-width: 1199.98px )
+      width: 100%
+    .title
+      font-size: $fw-500
+      font-size: 3em
+      margin-bottom: 30px
+      color: $text-color
+    p
+      color: $text-gray
+      font-size: 1.125em
+
+      margin-bottom: 60px
+    .btn
+      height: auto
+
+      border: none
+      outline: none
+
+      background-color: transparent
+
+      cursor: pointer
+
+      &.btn-primary
+        width: 100%
+        max-width: 198px
+        height: 58px
+
+        color: $text-color
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        background-color: $secondary-bg
+        border-radius: 8px
+
+        font-size: 1em
+        font-weight: $fw-600
+        transition: all .2s
+        margin-bottom: 40px
+        &:active
+          transform: scale(0.9)
+
+  .right-section
+    width: 50%
+    @media screen and ( max-width: 1199.98px )
+      width: 100%
+    .tools-list
+      display: flex
+      flex-direction: row
+
+      flex-wrap: wrap
+
+      justify-content: space-between
+      align-items: center

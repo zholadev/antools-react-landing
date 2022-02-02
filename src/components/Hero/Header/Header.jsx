@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../../Partials/Container'
 import './header.sass'
 import image from '../../../helpers/images'
+import Heading from '../../Heading/Heading'
 
 const Header = () => {
   return (
@@ -9,14 +10,18 @@ const Header = () => {
       <Container>
         <div className="header-box">
           <div className="left-section">
-            <h1 className="main-title">
-              Awesome tools for Designer & Developer <span>.</span>
-            </h1>
+            <div className="main-title">
+              <Heading text={'Awesome tools for Designer & Developer'} h1 />
+            </div>
 
-            <p>
-              Antool is a web collection of information on paid or free Design
-              and Development tools
-            </p>
+            <div className="subtitle">
+              <Heading
+                h5
+                text={
+                  'Antool is a web collection of information on paid or free Design and Development tools'
+                }
+              />
+            </div>
 
             <div className="form-group">
               <input

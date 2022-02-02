@@ -18,16 +18,26 @@
     width: 50%
     @media screen and ( max-width: 1199.98px )
       width: 100%
+    @media screen and ( max-width: 576px )
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      width: 100%
     .title
       font-size: $fw-500
       font-size: 3em
       margin-bottom: 30px
       color: $text-color
+      @media screen and ( max-width: 576px )
+        text-align: center
     p
       color: $text-gray
       font-size: 1.125em
 
       margin-bottom: 60px
+      @media screen and ( max-width: 576px )
+        text-align: center
     .btn
       height: auto
 
@@ -71,3 +81,5 @@
 
       justify-content: space-between
       align-items: center
+      @media screen and ( max-width: 1200px )
+        justify-content: center
